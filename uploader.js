@@ -23,7 +23,7 @@ const getMetadata = (name, imageUrl, attributes) => ({
   symbol: "",
   description:
     "You hold in your possession an OG thugbird. It was created with love for the Solana community by 0x_thug",
-  seller_fee_basis_points: 500,
+  seller_fee_basis_points: 500, //5 % royaltie
   external_url: "https://www.thugbirdz.com/",
   attributes,
   collection: {
@@ -38,10 +38,10 @@ const getMetadata = (name, imageUrl, attributes) => ({
       },
     ],
     category: "image",
-    maxSupply: 0,
+    maxSupply: 1,
     creators: [
       {
-        address: "CBBUMHRmbVUck99mTCip5sHP16kzGj3QTYB8K3XxwmQx",
+        address: "F7KpHjvZEioVu9HjhYHGZWb6px65r2HRNNw9dJ5HpTGe",
         share: 100,
       },
     ],
@@ -161,7 +161,15 @@ const iterateOverItems = async () => {
 
     // Save data to json in /public/
     const data = JSON.stringify(metadataCollection);
+    var MintUiArray = [];
+
     fs.writeFileSync("./public/arweave-images.json", data);
+    for (const [key, value] of Object.entries(metadataCollection)) {
+      MintUiArray.push(value["uri"]);
+    }
+    setTimeout(() => {
+      fs.writeFileSync("./public/MintUiData.json", JSON.stringify(MintUiArray));
+    }, 1000);
   } catch (e) {
     // Catch anything bad that happens
     console.error("We've thrown! Whoops!", e);
@@ -169,6 +177,7 @@ const iterateOverItems = async () => {
 };
 
 const readCsv = async () => {
+  key = await arweave.wallets.generate();
   //   Consider to use local wallet instead of generated one.
   //.  I'm not sure how this works, since newly generated wallet have 0 balance. 🤷🏻‍♂️
   //.  So, I comment out this line for now.

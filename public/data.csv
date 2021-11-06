@@ -1,12 +1,17 @@
-Name,Background Color,Head Color,Neck Color
-0000,palegreen,lightblue,lightslategray
-0001,coral,lightgoldenrodyellow,gray
-0002,coral,wheat,darkseagreen
-0003,khaki,silver,lightslategray
-0004,palegreen,silver,darkkhaki
-0005,aquamarine,paleturquoise,cadetblue
-0006,khaki,ivory,gray
-0007,thistle,wheat,slategray
-0008,khaki,lightcyan,lightcyan
-0009,thistle,lightsteelblue,dimgray
-0010,thistle,lightsteelblue,dimgray
+Name,Background Color,Head Color,Neck Color,isFounder
+0000,palegreen,lightblue,lightslategray,0
+0001,coral,lightgoldenrodyellow,gray,0
+0002,coral,wheat,darkseagreen,0
+0003,khaki,silver,lightslategray,0
+0004,palegreen,silver,darkkhaki,0
+0005,aquamarine,paleturquoise,cadetblue,0
+0006,khaki,ivory,gray,0
+0007,thistle,wheat,slategray,0
+0008,khaki,lightcyan,lightcyan,0
+0009,thistle,lightsteelblue,dimgray,0
+0010,thistle,lightsteelblue,dimgray,0
+0011,blue,ryno,wfw,0
+0012,red,ass,www,0
+0013,orange,chee,www,0
+0014,yellow,wewe,ww,0
+0015,foo,wfwf,wwwwww,1
