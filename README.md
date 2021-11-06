@@ -42,6 +42,18 @@ The result json file will be saved to `./public/arweave-images.json`. This files
 }
 ```
 
+##MintUI Data
+```
+[
+    "https://arweave.net/Q47yYvc2dqyS0C1cYUm6YORgic4yn-pj0rcqsNS65uQ", 
+
+    "https://arweave.net/90DuXOCOqIwsCbxcafadFKGrzPPONWkBzPNyMUH361U", 
+    
+    "https://arweave.net/akaPqk9sVcwwf-4_NpwJ9rF8NsStHJ-YDDAQ7pG0Htc"
+
+]
+
+```
 
 # TODO: More
 
