@@ -42,6 +42,11 @@ The result json file will be saved to `./public/arweave-images.json`. This files
 }
 ```
 
+[MintUI](https://github.com/InnerMindDAO/MintUI)
+```
+package.json
+"start": "concurrently -k \"craco start\" \"npm:electron\"",
+```
 ##MintUI Data
 ```
 [
